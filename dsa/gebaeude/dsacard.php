@@ -12,9 +12,7 @@
       <div class="row m-0 p-0">
         <div class="col-12 m-0 p-0">
           <div class="dsacard-header">
-            <?php
-                echo $data['Name'];
-            ?>
+            <?php echo $data['Name']; ?>
           </div>
         </div>
       </div>
@@ -25,7 +23,7 @@
         </div>
         <div class="col-6 m-0 p-0">
           <div class="dsacard-rasse mx-2">
-            Blubb
+            <?php echo $data['Rasse']; ?>
           </div>
           <div class="dsacard-infoblock mx-1">Infos</div>
         </div>
@@ -33,29 +31,26 @@
 
       <div class="row p-0 my-2 mx-0">
         <div class="col-6 m-0 p-0 ">
-          <div class="dsacard-talent my-2 mr-1 ml-0">
-            <div class="btn-group dsabtn-group">
-              <button type="button" class="btn btn-light btn-block dsabtn-talent-left">Wirtschaft</button>
-              <button type="button" class="btn btn-danger dsabtn-talent-right">14</button>
-            </div>
-          </div>
-          <div class="dsacard-talent my-2 mr-1 ml-0">
-            <div class="btn-group dsabtn-group">
-              <button type="button" class="btn btn-light btn-block dsabtn-talent-left">Unterhaltung</button>
-              <button type="button" class="btn btn-danger dsabtn-talent-right">14</button>
-            </div>
-          </div>
-          <div class="dsacard-talent my-2 mr-1 ml-0">
-            <div class="btn-group dsabtn-group">
-              <button type="button" class="btn btn-light btn-block dsabtn-talent-left">Kochen</button>
-              <button type="button" class="btn btn-danger dsabtn-talent-right">14</button>
-            </div>
-          </div>
-          <div class="dsacard-talent my-2 mr-1 ml-0">
-            <div class="btn-group dsabtn-group">
-              <button type="button" class="btn btn-light btn-block dsabtn-talent-left">Wildnis</button>
-              <button type="button" class="btn btn-danger dsabtn-talent-right">14</button>
-            </div>
+          <?php
+            $talente array("Wirtschaft", "Unterhaltung", "Kochen", "Wildnis");
+            foreach ($talente as $talent) {
+              echo "<div class='dsacard-talent my-2 mr-1 ml-0'>";
+              echo "<div class='btn-group dsabtn-group'>";
+              echo "<button type='button' class='btn btn-light btn-block dsabtn-talent-left'>".$talent."</button>";
+              echo "<button type='button' class='btn btn-danger dsabtn-talent-right dsabtn-talent-"
+              $val = $data[$talent];
+              if ($val < 5) {echo "grey";}
+              elseif ($val < 10) {echo "green";}
+              elseif ($val < 15) {echo "blue";}
+              elseif ($val < 20) {echo "purple";}
+              else {echo "yellow";}
+              echo "'>"
+              echo $val;
+              echo "</button>"
+              echo "</div>"
+              echo "</div>"
+            }
+          ?>
           </div>
         </div>
         <div class="col-6 m-0 p-0">
