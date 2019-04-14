@@ -22,10 +22,14 @@
   <body>
     <?php include ("../nav_dsa.php"); ?>
 
-    <div style="display: inline-block;"><?php include ("dsacard.php"); ?></div>
-    <div style="display: inline-block;"><?php include ("dsacard.php"); ?></div>
-    <div style="display: inline-block;"><?php include ("dsacard.php"); ?></div>
-    <div style="display: inline-block;"><?php include ("dsacard.php"); ?></div>
+    <?php
+      $pdo = new PDO('mysql:host=10.35.47.124:3306;dbname=k86121_dorf', 'k86121_dsauser', 'DasSchwarzeAuge');
 
+      $sql = "SELECT Name FROM Arbeiter WHERE Wirtschaft = 3";
+      foreach ($pdo->query($sql) as $row) {
+        echo $row['Name'];
+      }
+    ?>
+    
   </body>
 </html>
