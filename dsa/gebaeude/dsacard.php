@@ -20,18 +20,21 @@
       <div class="row m-0 p-0">
         <div class="col-6 m-0 p-0">
           <div class="dsacard-image"></div>
-        </div>
-        <div class="col-6 m-0 p-0">
-          <div class="dsacard-rasse mx-2">
-            <?php echo $data['Rasse']; ?>
           </div>
-          <div class="dsacard-infoblock mx-1">Infos</div>
+          <div class="col-6 m-0 p-0">
+            <div class="dsacard-rasse mx-2">
+              <?php echo $data['Rasse']; ?>
+            </div>
+            <div class="dsacard-infoblock mx-1">Infos</div>
+          </div>
         </div>
-      </div>
 
-      <div class="row p-0 my-2 mx-0">
-        <div class="col-6 m-0 p-0 ">
-          
+        <div class="row p-0 my-2 mx-0">
+          <div class="col-6 m-0 p-0 ">
+            <?php
+              $talente array("Wirtschaft", "Unterhaltung", "Kochen", "Wildnis");
+              
+            ?>
           </div>
         </div>
         <div class="col-6 m-0 p-0">
