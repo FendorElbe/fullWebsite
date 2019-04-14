@@ -72,10 +72,13 @@
         </div>
       </div>
 
-      <div class="dsacard-potential mx-1">
-        Potential: <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i>
-        div>
-
+      <div class="row m-0 p-0">
+        <div class="col-12 m-0 p-0">
+          <div class="dsacard-potential mx-1">
+            Potential: <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
