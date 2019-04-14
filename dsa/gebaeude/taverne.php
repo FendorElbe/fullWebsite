@@ -25,7 +25,7 @@
     <?php
       echo "Datenbank Test:\n";
       $pdo = new PDO('mysql:host=10.35.47.124:3306;dbname=k86121_dorf', 'k86121_dsauser', 'DasSchwarzeAuge');
-      echo "Connected to Database\n"
+      echo "Connected to Database\n";
 
       $sql = "SELECT Name FROM Arbeiter WHERE Wirtschaft = 3";
       foreach ($pdo->query($sql) as $row) {
