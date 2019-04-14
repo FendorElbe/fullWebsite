@@ -22,7 +22,8 @@
   <body>
     <?php include ("../nav_dsa.php"); ?>
 
-    <?php $name = "Alrik Alrikson"; include ("dsacard.php"); ?>
+    <?php $name = "Alrik Alrikson"; ?>
+    <?php include ("dsacard.php"); ?>
 
   </body>
 </html>
