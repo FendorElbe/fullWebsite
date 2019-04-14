@@ -14,7 +14,6 @@
         <div class="col-6 m-0 p-0">
           <div class="dsacard-rasse mx-2">Mittelländer</div>
           <div class="dsacard-infoblock mx-1">Infos</div>
-          <div class="dsacard-potential mx-1">Potential</div>
         </div>
       </div>
 
@@ -71,6 +70,13 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="dsacard-potential mx-1">
+        Potential
+        <input class="form-check-input" type="checkbox" value="" id="Potential1">
+        <input class="form-check-input" type="checkbox" value="" id="Potential2">
+        <input class="form-check-input" type="checkbox" value="" id="Potential3">
       </div>
 
     </div>
