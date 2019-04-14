@@ -27,9 +27,7 @@
     $sql = "SELECT Name FROM Arbeiter";
     foreach ($pdo->query($sql) as $row) {
       $name = $row['Name'];
-      echo "<div style='display: inline'>";
       include ("dsacard.php");
-      echo "</div>";
     }
     ?>
 
