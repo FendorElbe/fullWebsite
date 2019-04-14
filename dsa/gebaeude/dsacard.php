@@ -32,8 +32,30 @@
         <div class="row p-0 my-2 mx-0">
           <div class="col-6 m-0 p-0 ">
             <?php
-              $talente array("Wirtschaft", "Unterhaltung", "Kochen", "Wildnis");
-              
+              $talente = array("Wirtschaft", "Unterhaltung", "Kochen", "Wildnis");
+              foreach ($talente as $talent) {
+                echo "<div class='dsacard-talent my-2 mr-1 ml-0'>";
+                echo "<div class='btn-group dsabtn-group'>";
+                echo "<button type='button' class='btn btn-light btn-block dsabtn-talent-left'>".$talent."</button>";
+                echo "<button type='button' class='btn btn-danger dsabtn-talent-right dsabtn-talent-";
+                $val = $data[$talent];
+                if ($val < 5) {
+                  echo "grey";
+                } elseif ($val < 10) {
+                  echo "green";
+                } elseif ($val < 15) {
+                  echo "blue";
+                } elseif ($val < 20) {
+                  echo "purple";
+                } else {
+                  echo "yellow";
+                }
+                echo "'>";
+                echo $val;
+                echo "</button>";
+                echo "</div>";
+                echo "</div>";
+              }
             ?>
           </div>
         </div>
