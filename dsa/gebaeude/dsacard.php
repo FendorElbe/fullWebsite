@@ -58,42 +58,43 @@
               }
             ?>
           </div>
+          <div class="col-6 m-0 p-0">
+            <?php
+              $talente = array("Handwerk", "Schmied", "Baukunst", "Heilkunde");
+              foreach ($talente as $talent) {
+                echo "<div class='dsacard-talent my-2 ml-1 mr-0'>";
+                echo "<div class='btn-group dsabtn-group'>";
+                echo "<button type='button' class='btn btn-light btn-block dsabtn-talent-left'>".$talent."</button>";
+                echo "<button type='button' class='btn btn-danger dsabtn-talent-right dsabtn-talent-";
+                $val = $data[$talent];
+                if ($val < 5) {
+                  echo "grey";
+                } elseif ($val < 10) {
+                  echo "green";
+                } elseif ($val < 15) {
+                  echo "blue";
+                } elseif ($val < 20) {
+                  echo "purple";
+                } else {
+                  echo "yellow";
+                }
+                echo "'>";
+                echo strval($val);
+                echo "</button>";
+                echo "</div>";
+                echo "</div>";
+              }
+            ?>
+          </div>
         </div>
-        <div class="col-6 m-0 p-0">
-          <div class="dsacard-talent my-2 ml-1 mr-0">
-            <div class="btn-group dsabtn-group">
-              <button type="button" class="btn btn-light btn-block dsabtn-talent-left">Handwerk</button>
-              <button type="button" class="btn btn-danger dsabtn-talent-right">14</button>
-            </div>
-          </div>
-          <div class="dsacard-talent my-2 ml-1 mr-0">
-            <div class="btn-group dsabtn-group">
-              <button type="button" class="btn btn-light btn-block dsabtn-talent-left">Schmied</button>
-              <button type="button" class="btn btn-danger dsabtn-talent-right">3</button>
-            </div>
-          </div>
-          <div class="dsacard-talent my-2 ml-1 mr-0">
-            <div class="btn-group dsabtn-group">
-              <button type="button" class="btn btn-light btn-block dsabtn-talent-left">Baukunst</button>
-              <button type="button" class="btn btn-danger dsabtn-talent-right">14</button>
-            </div>
-          </div>
-          <div class="dsacard-talent my-2 ml-1 mr-0">
-            <div class="btn-group dsabtn-group">
-              <button type="button" class="btn btn-light btn-block dsabtn-talent-left">Heilkunde</button>
-              <button type="button" class="btn btn-danger dsabtn-talent-right">14</button>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="row m-0 p-0">
-        <div class="col-12 m-0 p-0">
-          <div class="dsacard-potential mx-1">
-            Potential: <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i>
+        <div class="row m-0 p-0">
+          <div class="col-12 m-0 p-0">
+            <div class="dsacard-potential mx-1">
+              Potential: <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
