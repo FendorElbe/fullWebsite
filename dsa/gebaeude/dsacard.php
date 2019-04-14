@@ -1,5 +1,5 @@
 <?php
-$pdo = new PDO('mysql:host=10.35.47.124:3306;dbname=k86121_dorf', 'k86121_dsauwer', 'DasSchwarzeAuge');
+$pdo = new PDO('mysql:host=10.35.47.124:3306;dbname=k86121_dorf', 'k86121_dsauser', 'DasSchwarzeAuge');
 ?>
 
 <div class="card m-1 p-0 dsacard">
