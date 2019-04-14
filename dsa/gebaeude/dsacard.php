@@ -1,6 +1,6 @@
 <?php
   $pdo = new PDO('mysql:host=10.35.47.124:3306;dbname=k86121_dorf', 'k86121_dsauser', 'DasSchwarzeAuge');
-  $sql = "SELECT Name FROM Arbeiter WHERE Name = 'Alrik Alrikson'";
+  $sql = "SELECT * FROM Arbeiter WHERE Name = 'Alrik Alrikson'";
   foreach ($pdo->query($sql) as $row) {
     $data = $row;
   }
