@@ -22,8 +22,16 @@
   <body>
     <?php include ("../nav_dsa.php"); ?>
 
-    <?php $name = "Alrik Alrikson"; ?>
-    <?php include ("dsacard.php"); ?>
+    <?php
+    $pdo = new PDO('mysql:host=10.35.47.124:3306;dbname=k86121_dorf', 'k86121_dsauser', 'DasSchwarzeAuge');
+    $sql = "SELECT Name FROM Arbeiter";
+    foreach ($pdo->query($sql) as $row) {
+      $name = $row['Name'];
+      echo "<div style='display: inline'>"
+      include ("dsacard.php");
+      echo "</div>"
+    }
+    ?>
 
   </body>
 </html>
