@@ -22,7 +22,7 @@
   <body>
     <?php include ("../nav_dsa.php"); ?>
 
-    <div class="container">
+    <div class="container p-0 m-0">
       <div class="row p-0 m-0">
         <div class="col-3 p-0 m-0">
           <?php include ("dsacard.php"); ?>
