@@ -51,7 +51,7 @@
                   echo "yellow";
                 }
                 echo "'>";
-                echo $data[$talent];
+                echo strval($data[$talent]);
                 echo "</button>";
                 echo "</div>";
                 echo "</div>";
