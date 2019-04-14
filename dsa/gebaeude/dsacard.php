@@ -51,7 +51,7 @@
                   echo "yellow";
                 }
                 echo "'>";
-                echo "$val";
+                echo $data[$talent];
                 echo "</button>";
                 echo "</div>";
                 echo "</div>";
