@@ -10,9 +10,7 @@
         <div class="col-12 m-0 p-0">
           <div class="dsacard-header">
             <?php
-              foreach ($pdo->query($sql) as $row) {
-                echo $row['Name'];
-              }
+                echo $pdo->query($sql)['Name'];
             ?>
           </div>
         </div>
@@ -23,7 +21,9 @@
           <div class="dsacard-image"></div>
         </div>
         <div class="col-6 m-0 p-0">
-          <div class="dsacard-rasse mx-2">Mittelländer</div>
+          <div class="dsacard-rasse mx-2">
+            Blubb
+          </div>
           <div class="dsacard-infoblock mx-1">Infos</div>
         </div>
       </div>
