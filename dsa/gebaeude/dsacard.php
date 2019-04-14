@@ -1,7 +1,3 @@
-<?php
-$pdo = new PDO('mysql:host=10.35.47.124:3306;dbname=k86121_dorf', 'k86121_dsauser', 'DasSchwarzeAuge');
-?>
-
 <div class="card m-1 p-0 dsacard">
   <div class="card-body m-3 p-0">
     <div class="container m-0 p-0">
@@ -9,6 +5,8 @@ $pdo = new PDO('mysql:host=10.35.47.124:3306;dbname=k86121_dorf', 'k86121_dsause
         <div class="col-12 m-0 p-0">
           <div class="dsacard-header">
             <?php
+            $pdo = new PDO('mysql:host=10.35.47.124:3306;dbname=k86121_dorf', 'k86121_dsauser', 'DasSchwarzeAuge');
+
               $sql = "SELECT Name FROM Arbeiter WHERE Name = 'Alrik Alrikson'";
               foreach ($pdo->query($sql) as $row) {
                 echo $row['Name'];
