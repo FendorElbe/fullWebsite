@@ -11,9 +11,31 @@
     <div class="container m-0 p-0">
       <div class="row m-0 p-0">
         <div class="col-12 m-0 p-0">
-          <div class="dsacard-header">
-            <?php echo $data['Name']; ?>
-          </div>
+          <?php
+            echo "<div class='dsacard-header dsacard-header-";
+            $talente = array("Wirtschaft", "Unterhaltung", "Kochen", "Wildnis", "Handwerk", "Schmied", "Baukunst", "Heilkunde");
+            $maxval = 0;
+            foreach ($talente as $talent) {
+              $tmpval = $data[$talent];
+              if ($tmpval > $maxval) {
+                $maxval = $tmpval;
+              }
+            }
+            if ($maxval < 5) {
+              echo "grey";
+            } elseif ($maxval < 10) {
+              echo "green";
+            } elseif ($maxval < 15) {
+              echo "blue";
+            } elseif ($maxval < 20) {
+              echo "purple";
+            } else {
+              echo "yellow";
+            }
+            echo "'>";
+            echo $data['Name'];
+            echo "</div>";
+          ?>
         </div>
       </div>
 
