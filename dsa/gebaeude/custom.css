@@ -1,7 +1,38 @@
 .dsacard-header {
-  border-style: solid;
-  border-width: 5px;
-  border-color: red;
+  border-left: 5px solid #f4d03f;
   border-radius: 2px;
-  background-color: lightgrey;
+  background-color: #FEFFBC;
+
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.dsacard-image {
+  background-color: white;
+  height: 200px;
+}
+
+.dsacard-rasse {
+  background-color: #FEFFBC;
+  text-align: center;
+}
+
+.dsacard-talent {
+  width: 100%;
+}
+
+.dsabtn-talent-right {
+  width: 60px !important;
+  font-weight: bold;
+}
+
+.dsabtn-group {
+  width: 100%;
+}
+
+.dsacard {
+  background-color: #FEFFEA;
+  height: 528px;
+  width: 378px;
 }
