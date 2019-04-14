@@ -32,7 +32,7 @@
         <div class="row p-0 my-2 mx-0">
           <div class="col-6 m-0 p-0 ">
             <?php
-              $talente = array("Wirtschaft", "Unterhaltung", "Kochen", "Wildnis");
+              $talente = array('Wirtschaft', 'Unterhaltung', 'Kochen', 'Wildnis');
               foreach ($talente as $talent) {
                 echo "<div class='dsacard-talent my-2 mr-1 ml-0'>";
                 echo "<div class='btn-group dsabtn-group'>";
