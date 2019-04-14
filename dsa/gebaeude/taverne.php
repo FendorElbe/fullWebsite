@@ -22,10 +22,21 @@
   <body>
     <?php include ("../nav_dsa.php"); ?>
 
-    <?php include ("dsacard.php"); ?>
-    <?php include ("dsacard.php"); ?>
-    <?php include ("dsacard.php"); ?>
-    <?php include ("dsacard.php"); ?>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <?php include ("dsacard.php"); ?>
+        </div>
+        <div class="col-3">
+          <?php include ("dsacard.php"); ?>
+        </div>
+        <div class="col-3">
+          <?php include ("dsacard.php"); ?>
+        </div>
+        <div class="col-3">
+          <?php include ("dsacard.php"); ?>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
