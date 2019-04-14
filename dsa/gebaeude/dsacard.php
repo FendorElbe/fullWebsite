@@ -38,7 +38,7 @@
                 echo "<div class='btn-group dsabtn-group'>";
                 echo "<button type='button' class='btn btn-light btn-block dsabtn-talent-left'>".$talent."</button>";
                 echo "<button type='button' class='btn btn-danger dsabtn-talent-right dsabtn-talent-";
-                $val = $data['Wirtschaft'];
+                $val = $data[$talent];
                 if ($val < 5) {
                   echo "grey";
                 } elseif ($val < 10) {
