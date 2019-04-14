@@ -73,10 +73,10 @@
       </div>
 
       <div class="dsacard-potential mx-1">
-        Potential
-        <input class="form-check-input" type="checkbox" value="" id="Potential1">
-        <input class="form-check-input" type="checkbox" value="" id="Potential2">
-        <input class="form-check-input" type="checkbox" value="" id="Potential3">
+        <div style ="display: inline-block;">Potential</div>
+        <div style="display: inline-block;"><input class="form-check-input" type="checkbox" value="" id="Potential1"></div>
+        <div style="display: inline-block;"><input class="form-check-input" type="checkbox" value="" id="Potential2"></div>
+        <div style="display: inline-block;"><input class="form-check-input" type="checkbox" value="" id="Potential3"></div>
       </div>
 
     </div>
