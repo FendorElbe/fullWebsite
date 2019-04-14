@@ -37,7 +37,7 @@
                 echo "<div class='dsacard-talent my-2 mr-1 ml-0'>";
                 echo "<div class='btn-group dsabtn-group'>";
                 echo "<button type='button' class='btn btn-light btn-block dsabtn-talent-left'>".$talent."</button>";
-                echo "<button type='button' class='btn btn-danger dsabtn-talent-right dsabtn-talent-";
+                echo "<button type='button' class='btn dsabtn-talent-right dsabtn-talent-";
                 $val = $data[$talent];
                 if ($val < 5) {
                   echo "grey";
@@ -65,7 +65,7 @@
                 echo "<div class='dsacard-talent my-2 ml-1 mr-0'>";
                 echo "<div class='btn-group dsabtn-group'>";
                 echo "<button type='button' class='btn btn-light btn-block dsabtn-talent-left'>".$talent."</button>";
-                echo "<button type='button' class='btn btn-danger dsabtn-talent-right dsabtn-talent-";
+                echo "<button type='button' class='btn dsabtn-talent-right dsabtn-talent-";
                 $val = $data[$talent];
                 if ($val < 5) {
                   echo "grey";

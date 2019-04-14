@@ -27,11 +27,24 @@
   font-weight: bold;
 }
 
-.dsabtn-group {
-  width: 100%;
+.dsabtn-talent-grey {
+  background-color: lightgrey;
+}
+.dsabtn-talent-green {
+  background-color: green;
+}
+.dsabtn-talent-blue {
+  background-color: blue;
+}
+.dsabtn-talent-purple {
+  background-color: purple;
+}
+.dsabtn-talent-yellow {
+  background-color: yellow;
 }
 
-.dsacard-potential {
+.dsabtn-group {
+  width: 100%;
 }
 
 .dsacard {
