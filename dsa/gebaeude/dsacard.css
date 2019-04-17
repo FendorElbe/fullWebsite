@@ -119,15 +119,19 @@
 }
 .dsabtn-talent-green:hover {
   background-color: #00cc00;
+  border-color: green;
 }
 .dsabtn-talent-blue:hover {
   background-color: #8080ff;
+  border-color: blue;
 }
 .dsabtn-talent-purple:hover {
   background-color: #e600e6;
+  border-color: purple;
 }
 .dsabtn-talent-yellow:hover {
-  background-color: #ffff80;
+  background-color: #ffff99;
+  border-color: yellow;
 }
 
 
