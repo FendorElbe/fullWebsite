@@ -1,6 +1,5 @@
 .dsacard-header {
   border-radius: 2px;
-
   text-align: center;
   font-size: 30px;
   font-weight: bold;
@@ -85,14 +84,14 @@
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
+
 .dsacard-talent {
   width: 100%;
 }
 
 .dsabtn-talent-right {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-ont-weight: bold;
+  width: 60px !important;
+  font-weight: bold;
   border: 2px solid lightgrey;
 }
 
