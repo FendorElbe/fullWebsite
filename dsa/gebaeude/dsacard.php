@@ -58,9 +58,23 @@ echo "'>";
           <div class="dsacard-image"></div>
           </div>
           <div class="col-6 m-0 p-0">
-            <div class="dsacard-rasse mx-2">
-              <?php echo $data['Rasse']; ?>
-            </div>
+            <?php
+              echo "<div class='dsacard-rasse mx-2 dsacard-rasse-";
+              if ($maxval < 5) {
+                echo "grey";
+              } elseif ($maxval < 10) {
+                echo "green";
+              } elseif ($maxval < 15) {
+                echo "blue";
+              } elseif ($maxval < 20) {
+                echo "purple";
+              } else {
+                echo "yellow";
+              }
+              echo "'>";
+              echo $data['Rasse'];
+              echo "</div>";
+            ?>
             <div class="dsacard-infoblock mx-1">Infos</div>
           </div>
         </div>

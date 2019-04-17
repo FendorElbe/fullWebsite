@@ -41,6 +41,27 @@
   text-align: center;
 }
 
+.dsacard-rasse-grey {
+  background-color: white;
+}
+
+.dsacard-rasse-green {
+  background-color: lightgreen;
+}
+
+.dsacard-rasse-blue {
+  background-color: lightblue;
+}
+
+.dsacard-rasse-purple {
+  background-color: violet;
+}
+
+.dsacard-rasse-yellow {
+  background-color: lemonchiffon;
+}
+
+
 .dsacard-talent {
   width: 100%;
 }
