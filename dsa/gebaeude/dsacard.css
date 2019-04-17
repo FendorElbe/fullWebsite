@@ -147,6 +147,7 @@
 .dsacard {
   height: 528px;
   width: 378px;
+  background-image: url("../img/dynamic-style.png");
 }
 
 .dsacard-grey {
