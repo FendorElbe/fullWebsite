@@ -89,6 +89,7 @@
 .dsabtn-talent-right {
   width: 60px !important;
   font-weight: bold;
+  border: 2px solid lightgrey;
 }
 
 .dsabtn-talent-grey {
