@@ -78,3 +78,23 @@
   height: 528px;
   width: 378px;
 }
+
+.dsacard-grey {
+  background-color: whitesmoke;
+}
+
+.dsacard-green {
+  background-color: #99ff99;
+}
+
+.dsacard-blue {
+  background-color: #ccccff;
+}
+
+.dsacard-purple {
+  background-color: #ffb3ff;
+}
+
+.dsacard-yellow {
+  background-color: #ffffcc;
+}
