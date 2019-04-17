@@ -48,22 +48,27 @@
 
 .dsacard-rasse-grey {
   background-color: white;
+  border: 5px solid lightgrey;
 }
 
 .dsacard-rasse-green {
   background-color: lightgreen;
+  border: 5px solid green;
 }
 
 .dsacard-rasse-blue {
   background-color: lightblue;
+  border: 5px solid blue;
 }
 
 .dsacard-rasse-purple {
   background-color: violet;
+  border: 5px solid purple;
 }
 
 .dsacard-rasse-yellow {
   background-color: lemonchiffon;
+  border: 5px solid yellow;
 }
 
 
@@ -109,17 +114,17 @@
 }
 
 .dsacard-green {
-  background-color: #99ff99;
+  background-color: #e6ffe6;
 }
 
 .dsacard-blue {
-  background-color: #ccccff;
+  background-color: #e6e6ff;
 }
 
 .dsacard-purple {
-  background-color: #ffb3ff;
+  background-color: #ffe6ff;
 }
 
 .dsacard-yellow {
-  background-color: #ffffcc;
+  background-color: #ffffe6;
 }
