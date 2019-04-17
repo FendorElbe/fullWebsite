@@ -101,17 +101,21 @@
 .dsabtn-talent-green {
   background-color: green;
   color: white;
+  border-color: green;
 }
 .dsabtn-talent-blue {
   background-color: blue;
   color: white;
+  border-color: blue;
 }
 .dsabtn-talent-purple {
   background-color: purple;
   color: white;
+  border-color: purple;
 }
 .dsabtn-talent-yellow {
   background-color: yellow;
+  border-color: yellow;
 }
 
 .dsabtn-group {
