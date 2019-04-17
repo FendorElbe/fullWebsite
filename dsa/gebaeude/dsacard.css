@@ -117,6 +117,19 @@
   background-color: yellow;
   border-color: yellow;
 }
+.dsabtn-talent-green:hover {
+  background-color: #00cc00;
+}
+.dsabtn-talent-blue:hover {
+  background-color: #8080ff;
+}
+.dsabtn-talent-purple:hover {
+  background-color: #e600e6;
+}
+.dsabtn-talent-yellow:hover {
+  background-color: #ffff80;
+}
+
 
 .dsabtn-group {
   width: 100%;
