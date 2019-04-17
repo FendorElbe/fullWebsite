@@ -48,27 +48,32 @@
 
 .dsacard-rasse-grey {
   background-color: white;
-  border: 5px solid lightgrey;
+  border: 2px solid lightgrey;
+  border-top-style: none;
 }
 
 .dsacard-rasse-green {
   background-color: lightgreen;
-  border: 5px solid green;
+  border: 2px solid green;
+  border-top-style: none;
 }
 
 .dsacard-rasse-blue {
   background-color: lightblue;
-  border: 5px solid blue;
+  border: 2px solid blue;
+  border-top-style: none;
 }
 
 .dsacard-rasse-purple {
   background-color: violet;
-  border: 5px solid purple;
+  border: 2px solid purple;
+  border-top-style: none;
 }
 
 .dsacard-rasse-yellow {
   background-color: lemonchiffon;
-  border: 5px solid yellow;
+  border: 2px solid yellow;
+  border-top-style: none;
 }
 
 
