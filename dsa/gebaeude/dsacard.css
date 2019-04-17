@@ -8,27 +8,32 @@
 
 .dsacard-header-grey {
   background-color: white;
-  border-left: 5px solid lightgrey;
+  border: 5px solid lightgrey;
+  border-style: outset;
 }
 
 .dsacard-header-green {
   background-color: lightgreen;
-  border-left: 5px solid green;
+  border: 5px solid green;
+  border-style: outset;
 }
 
 .dsacard-header-blue {
   background-color: lightblue;
-  border-left: 5px solid blue;
+  border: 5px solid blue;
+  border-style: outset;
 }
 
 .dsacard-header-purple {
   background-color: violet;
-  border-left: 5px solid purple;
+  border: 5px solid purple;
+  border-style: outset;
 }
 
 .dsacard-header-yellow {
   background-color: lemonchiffon;
-  border-left: 5px solid yellow;
+  border: 5px solid yellow;
+  border-style: outset;
 }
 
 .dsacard-image {
@@ -88,7 +93,6 @@
 }
 .dsabtn-talent-yellow {
   background-color: yellow;
-  color: white;
 }
 
 .dsabtn-group {
