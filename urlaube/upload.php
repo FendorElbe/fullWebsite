@@ -17,26 +17,24 @@
     <title>Urlaube</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Urlaube</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="./suedtirol2018/index.php">Südtirol 2018</a>
-        </li>
-		<li class="nav-item">
-          <a class="nav-link" href="./jakobsweg2019/index.php">Jakobsweg 2019</a>
-        </li>
+    <?php include ("nav_urlaube.php"); ?>
+    <div class="container p-3">
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#neuUrlaub">Neuer Urlaub</a></li>
+        <li><a data-toggle="tab" href="#neuTag">Neuer Tag</a></li>
+        <li><a data-toggle="tab" href="#neuBild">Bilderupload</a></li>
       </ul>
+      <div class="tab-content">
+        <div id="neuUrlaub" class="tab-pane fade in active">
+          <p>Neuer Urlaub</p>
+        </div>
+        <div id="neuTag" class="tab-pane fade">
+          <p>Neue Tage</p>
+        </div>
+        <div id="neuBild" class="tab-pane fade">
+          <p>Neues Bild</p>
+        </div>
+      </div>
     </div>
-  </nav>
-
-  <div class="container p-3">
-         
-  </div>
-</body>
+  </body>
 </html>
