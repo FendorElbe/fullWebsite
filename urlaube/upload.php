@@ -22,19 +22,19 @@
     <div class="container p-3">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+          <a class="nav-link active" id="neuUrlaub-tab" data-toggle="tab" href="#neuUrlaub" role="tab" aria-controls="neuUrlaub" aria-selected="true">Neuer Urlaub</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+          <a class="nav-link" id="neuTag-tab" data-toggle="tab" href="#neuTag" role="tab" aria-controls="neuTag" aria-selected="false">Neuer Tag</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+          <a class="nav-link" id="neuBild-tab" data-toggle="tab" href="#neuBild" role="tab" aria-controls="neuBild" aria-selected="false">Bild hochladen</a>
         </li>
       </ul>
       <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        <div class="tab-pane fade show active" id="neuUrlaub" role="tabpanel" aria-labelledby="neuUrlaub-tab">...</div>
+        <div class="tab-pane fade" id="neuTag" role="tabpanel" aria-labelledby="neuTag-tab">...</div>
+        <div class="tab-pane fade" id="neuBild" role="tabpanel" aria-labelledby="neuBild-tab">...</div>
       </div>
     </div>
   </body>
