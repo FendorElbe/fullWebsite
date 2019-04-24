@@ -18,22 +18,23 @@
   </head>
   <body>
     <?php include ("nav_urlaube.php"); ?>
+
     <div class="container p-3">
-      <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#neuUrlaub">Neuer Urlaub</a></li>
-        <li><a data-toggle="tab" href="#neuTag">Neuer Tag</a></li>
-        <li><a data-toggle="tab" href="#neuBild">Bilderupload</a></li>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+        </li>
       </ul>
-      <div class="tab-content">
-        <div id="neuUrlaub" class="tab-pane fade in active">
-          <p>Neuer Urlaub</p>
-        </div>
-        <div id="neuTag" class="tab-pane fade">
-          <p>Neue Tage</p>
-        </div>
-        <div id="neuBild" class="tab-pane fade">
-          <p>Neues Bild</p>
-        </div>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
       </div>
     </div>
   </body>
