@@ -33,7 +33,7 @@
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="neuUrlaub" role="tabpanel" aria-labelledby="neuUrlaub-tab">
-          <div class="container">
+          <div class="container p-3">
             <form action="/neuUrlaub.php" method="post">
               <div class="form-group">
                 <label for="titleUrlaub">Titel des Urlaubs</label>
@@ -48,7 +48,7 @@
           </div>
         </div>
         <div class="tab-pane fade" id="neuTag" role="tabpanel" aria-labelledby="neuTag-tab">
-          <div class="container">
+          <div class="container p-3">
             <form action="/neuTag.php" method="post">
               <div class="form-group">
                 <label for="titleTag">Titel des Tages</label>
@@ -58,7 +58,15 @@
             </form>
           </div>
         </div>
-        <div class="tab-pane fade" id="neuBild" role="tabpanel" aria-labelledby="neuBild-tab">...</div>
+        <div class="tab-pane fade" id="neuBild" role="tabpanel" aria-labelledby="neuBild-tab">
+          <div class="container p-3">
+            <form action="imageUpload.php" method="POST" enctype="multipart/form-data">
+             <input type="hidden" name="<?php echo ini_get("session.upload_progress.name"); ?>" value="123" />
+             <input type="file" name="file1" />
+             <input type="submit" />
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </body>
