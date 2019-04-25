@@ -6,10 +6,9 @@ $uploaddir = '/testupload/';
 $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
 
 echo '<pre>';
-if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
-    echo "Datei ist valide und wurde erfolgreich hochgeladen.\n";
-} else {
-    echo "Möglicherweise eine Dateiupload-Attacke!\n";
+try{ (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile))
+} catch (Exception $e) {
+    echo 'Exception abgefangen: ',  $e->getMessage(), "\n";
 }
 
 echo 'Weitere Debugging Informationen:';
