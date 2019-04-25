@@ -33,19 +33,31 @@
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="neuUrlaub" role="tabpanel" aria-labelledby="neuUrlaub-tab">
-          <form action="/neuUrlaub.php" method="post">
-            <div class="form-group">
-              <label for="titleUrlaub">Titel des Urlaubs</label>
-              <input type="text" class="form-control" id="titleUrlaub" name="titleurlaub" placeholder="Urlaubstitel">
-            </div>
-            <div class="form-group">
-              <label for="descUrlaub">Beschreibung des Urlaubs</label>
-              <textarea class="form-control" id="descUrlaub" name="descurlaub" rows="5"></textarea>
-            </div>
-            <button type="submit" class="btn btn-secondary">Abschicken</button>
-          </form>
+          <div class="container">
+            <form action="/neuUrlaub.php" method="post">
+              <div class="form-group">
+                <label for="titleUrlaub">Titel des Urlaubs</label>
+                <input type="text" class="form-control" id="titleUrlaub" name="titleUrlaub" placeholder="Urlaubstitel">
+              </div>
+              <div class="form-group">
+                <label for="descUrlaub">Beschreibung des Urlaubs</label>
+                <textarea class="form-control" id="descUrlaub" name="descUrlaub" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-secondary">Abschicken</button>
+            </form>
+          </div>
         </div>
-        <div class="tab-pane fade" id="neuTag" role="tabpanel" aria-labelledby="neuTag-tab">...</div>
+        <div class="tab-pane fade" id="neuTag" role="tabpanel" aria-labelledby="neuTag-tab">
+          <div class="container">
+            <form action="/neuTag.php" method="post">
+              <div class="form-group">
+                <label for="titleTag">Titel des Tages</label>
+                <input type="text" class="form-control" id="titleTag" name="titleTag" placeholder="Tagestitel">
+              </div>
+              <button type="submit" class="btn btn-secondary">Abschicken</button>
+            </form>
+          </div>
+        </div>
         <div class="tab-pane fade" id="neuBild" role="tabpanel" aria-labelledby="neuBild-tab">...</div>
       </div>
     </div>
