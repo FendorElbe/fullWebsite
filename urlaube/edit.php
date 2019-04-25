@@ -61,7 +61,7 @@
         <div class="tab-pane fade" id="neuBild" role="tabpanel" aria-labelledby="neuBild-tab">
           <div class="container p-3">
             <form action="imageUpload.php" method="POST" enctype="multipart/form-data">
-             <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+             <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
              <input type="file" name="userfile" />
              <input type="submit" />
             </form>
