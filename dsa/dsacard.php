@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="dsacard.css">
+
 <?php
   $pdo = new PDO('mysql:host=10.35.47.124:3306;dbname=k86121_dorf', 'k86121_dsauser', 'DasSchwarzeAuge');
   $sql = "SELECT * FROM Arbeiter WHERE Name = '$name'";
