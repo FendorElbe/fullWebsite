@@ -27,7 +27,7 @@
     $sql = "SELECT Name FROM Arbeiter";
     foreach ($pdo->query($sql) as $row) {
       $name = $row['Name'];
-      include ("dsacard.php");
+      include ("../dsacard.php");
     }
     ?>
 
