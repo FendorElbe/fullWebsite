@@ -141,7 +141,17 @@ echo "'>";
         <div class="row m-0 p-0">
           <div class="col-12 m-0 p-0">
             <div class="dsacard-potential mx-1">
-              Potential: <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i>
+              Potential:
+              <?php
+                $used = $data['Potential_used'];
+                $unused = $data['Potential'] - $used;
+                for ($i = 1; $i <= $used; $i++) {
+                  echo '<i class="fas fa-star">';
+                }
+                for ($i = 1; $i <= $unused; $i++) {
+                  echo '<i class="far fa-star">';
+                }
+              ?>
             </div>
           </div>
         </div>
