@@ -146,10 +146,10 @@ echo "'>";
                 $used = $data['Potential_used'];
                 $unused = $data['Potential'] - $used;
                 for ($i = 1; $i <= $used; $i++) {
-                  echo '<i class="fas fa-star">';
+                  echo '<i class="fas fa-star"></i>';
                 }
                 for ($i = 1; $i <= $unused; $i++) {
-                  echo '<i class="far fa-star">';
+                  echo '<i class="far fa-star"></i>';
                 }
               ?>
             </div>
