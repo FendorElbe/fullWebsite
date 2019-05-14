@@ -22,46 +22,18 @@
   <body>
     <?php include ("../nav_dsa.php"); ?>
 
-    <div class="container-fluid h-100">
-      <div class="row h-100">
-        <div class="col-8">
 
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                Küche
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-4">
-                <ul class="list-group">
-                  <li class="list-group-item list-header">Koch</li>
-                  <li class="list-group-item">Kochen</li>
-                </ul>
-              </div>
-              <div class="col-4">
-                <div class="btn-group" role="group" aria-label="Koch1">
-                  <button type="button" class="btn btn-secondary">Alrik Alrikson</button>
-                  <button type="button" class="btn btn-secondary">12</button>
-                </div>
-              </div>
-              <div class="col-4">
-                <button type="button" class="btn btn-secondary">12</button>
-              </div>
-            </div>
 
-          </div>
+    <br>Just some space<br>
 
-        </div>
-        <div class="col-4 border-left">
-
-          <div class="container-fluid p-0">
-            Bilanz
-          </div>
-
-        </div>
-      </div>
-    </div>
+    <?php
+    $pdo = new PDO('mysql:host=10.35.47.124:3306;dbname=k86121_dorf', 'k86121_dsauser', 'DasSchwarzeAuge');
+    $sql = "SELECT Name FROM Arbeiter";
+    foreach ($pdo->query($sql) as $row) {
+      $name = $row['Name'];
+      include ("../dsacard.php");
+    }
+    ?>
 
   </body>
 </html>
