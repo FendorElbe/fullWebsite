@@ -33,19 +33,25 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-4">
+              <div class="col-2">
                 <ul class="list-group">
                   <li class="list-group-item list-header">Koch</li>
                   <li class="list-group-item">Kochen</li>
                 </ul>
               </div>
               <div class="col-4">
-                <div class="btn-group" role="group" aria-label="Koch1">
-                  <button type="button" class="btn btn-secondary">Alrik Alrikson</button>
+                <div class="btn-group" role="group" aria-label="Koch1_Arbeiter">
+                  <button type="button" class="btn btn-secondary arbeiter-btn">Alrik Alrikson</button>
                   <button type="button" class="btn btn-secondary">12</button>
                 </div>
               </div>
               <div class="col-4">
+                <div class="btn-group" role="group" aria-label="Koch1_Equipment">
+                  <button type="button" class="btn btn-secondary equipment-btn">Goldener Kochlöffel</button>
+                  <button type="button" class="btn btn-secondary">+4</button>
+                </div>
+              </div>
+              <div class="col-2">
                 <button type="button" class="btn btn-secondary">12</button>
               </div>
             </div>
