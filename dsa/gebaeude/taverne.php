@@ -35,7 +35,7 @@
             <div class="row">
               <div class="col-2">
                 <ul class="list-group">
-                  <li class="list-group-item list-header">Koch</li>
+                  <li class="list-group-item list-header active">Koch</li>
                   <li class="list-group-item">Kochen</li>
                 </ul>
               </div>
